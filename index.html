@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <article class="items">
+                <p draggable="true" ondragstart="iniciarArrastre(event)">THERE IS</p>
+                <p draggable="true" ondragstart="iniciarArrastre(event)">THERE ARE</p>
+            </article>
+            <article class="question">
+                <p>1. </p>
+               <input type="text" id="q1" name="q1" readonly ondrop="soltarTexto(event)" ondragover="permitirSoltar(event)">
+               <p>some books on the shelf.</p>
+
+            </article>
+            <div class="button-group">
+    <button id="btnprev" type="button" class="btn">Atras</button>
+    <button id="btnnext" type="button" class="btn">Siguiente</button>
+    <button type="button" class="btn" onclick="verificarRespuestas()">Verificar</button>
+</div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

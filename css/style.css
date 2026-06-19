@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Roboto',serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 30px;
+    width: 50%;
+    height: 250px;
+   
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    gap: 25px;
+}
+
+.items p{
+    border:2px solid rgb(0, 0, 0);
+    background: rgb(30, 102, 102);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   letter-spacing: 3px;
+}
+.items p:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px rgb(24, 2, 126);
+    transition: 0.2s;
+}
+
+
+
+.question{
+    height: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;  
+    gap:5px;
+}
+
+.question input{
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    
+}
+
+
+.button-group{
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.btn{
+    background: rgb(0, 68, 255);
+    color: white;
+    padding: 4px;
+    width: 20%;
+    box-shadow: 0 0 9px rgb(2, 122, 131);
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: inherit;
+
+}
+
+.btn:hover{
+    color: black;
+    background: rgb(0, 204, 255);
+}
+
+body{
+    background: linear-gradient(180deg, #00084f 0.000%, #001e78 25.000%, #0034a6 50.000%, #0049d8 75.000%, #005eff 100.000%);
+}
